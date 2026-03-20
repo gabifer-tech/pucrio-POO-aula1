@@ -1,0 +1,78 @@
+Variáveis
+
+# Variáveis: Definição e tipos
+
+# Declarando 4 variáveis e atribuindo valores a elas
+uma_string = "Aluno"
+um_inteiro = 7
+um_float = 7.584
+um_booleano = True
+
+# Imprimindo o valor e o tipo de uma das variáveis
+print(um_float)
+print(type(um_float))
+
+# Casting: Convertendo a variável do tipo float para int e para string
+print(int(um_float))
+print(str(um_float))
+
+  # Operações Aritméticas
+
+# Soma, Subtração, Multiplicação e Divisão
+resultado_1 = 7 + 5
+resultado_2 = um_inteiro - resultado_1
+resultado_3 = resultado_2 * 3
+resultado_4 = resultado_3 / 4
+
+# Imprimindo os resultados concatenando uma string com o resultado numérico
+print("Resultado da soma = " + str(resultado_1))
+print("Resultado da subtração = " + str(resultado_2))
+print("Resultado da multiplicação = " + str(resultado_3))
+print("Resultado da divisão = " + str(resultado_4))
+
+# Potenciação e Resto da Divisão
+resultado_5 = 2 ** 4
+resultado_6 = 13 % 4
+
+# Imprimindo os resultados concatenando uma string com o resultado numérico
+print("Resultado da potenciação = " + str(resultado_5))
+print("Resultado do resto da divisão = " + str(resultado_6))
+
+  # Incremento e Decremento
+
+# Decrementando 3 unidades
+um_inteiro -= 3
+print("Resultado: " + str(um_inteiro)) # 7 - 3 = 4 --> agora um_inteiro é 4
+
+# Incrementando 5 unidades
+um_inteiro += 5
+print("Resultado: " + str(um_inteiro)) # 4 + 5 = 9 --> agora um_inteiro é 9
+
+  # Operadores de Igualdade
+
+variavel_um = 1
+variavel_dois = 2
+variavel_tres = 3
+
+print(1 == variavel_um)
+print(2 == variavel_um)
+
+equal = (variavel_um == variavel_dois) # os () são opcionais neste caso, mas ajudam a legibilidade
+not_equal = (variavel_um != variavel_dois)
+
+print("Um é igual a dois? " + str(equal))
+print("Um é diferente de dois? " + str(not_equal))
+
+# Operadores de Comparação
+
+print("Um é maior do que dois? " + str(variavel_um > variavel_dois))
+print("Um é menor do que dois? " + str(variavel_um < variavel_dois))
+
+  # Operadores Lógicos and (e) e or (ou)
+
+print((2 > 1) and (3 < 5)) # V V
+print((2 > 1) and (1 > 3)) # V F
+
+print((3 < 5) or (2 > 1)) # V V
+print((0 > 1) or (0 == -1)) # F F
+print((0 < 1) or (0 == -1)) # V F
