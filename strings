@@ -1,0 +1,69 @@
+#Concatenação
+
+programacao = "Programação" # pode ser tanto delimitada por aspas duplas...
+oo = 'OO' #... quanto por aspas simples, mas sempre combinando
+programacao_oo = programacao + " " + oo
+print(programacao_oo)
+
+#Tamanho
+
+print(len(programacao_oo))
+
+#Indexação e Substrings
+
+frase = "Python é muito divertido!"
+
+#A indexação começa com 0
+print(frase[3])
+
+#use -1 para pegar a última letra
+print(frase[-1])
+
+#-2 pega a penúltima letra
+print(frase[-2])
+
+#string[start:end] - end não é incluso
+print(frase[:4])
+print(frase[10:])
+print(frase[5:10])
+print(frase[:])
+
+#Multiplicação de uma string por um número
+
+ola = "olá"
+sete_olas = ola * 7
+print(sete_olas)
+
+#Operador in
+
+programacao_python = "Programação em Python"
+
+#checa se a string contém "Python"
+print("Python" in programacao_python)
+
+#checa se a string contém "python"
+print("python" in programacao_python)
+
+#checa se a string contém "abacate"
+print("abacate" in programacao_python)
+
+#Escaping
+
+print("Estou estudando\n" + programacao_python) # \n = nova linha
+# Maiúsculas e Minúsculas
+
+print(programacao_python.lower()) # todas minúsculas
+print(programacao_python.upper()) # todas maiúsculas
+
+tudo_minuscula = "aula de python"
+print(tudo_minuscula.capitalize()) # primeira letra maiúscula
+
+#Formatação
+
+nome = "Belinha"
+numero_inteiro = 7
+numero_decimal = 7.584
+
+print("Olá, meu nome é %s! Tenho %d anos e %d reais" % (nome, numero_inteiro, numero_decimal)) # float impresso como int
+print("Olá, meu nome é %s! Tenho %d anos e %f reais" % (nome, numero_inteiro, numero_decimal)) # float impresso como float
+print("Olá, meu nome é %s! Tenho %d anos e %.2f reais" % (nome, numero_inteiro, numero_decimal)) # float impresso como float com 2 casas decimais
